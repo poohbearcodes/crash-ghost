@@ -1,6 +1,8 @@
+import { withBasePath } from "@/lib/asset-path";
+
 export function Footer() {
   return (
-    <footer id="contact" className="bg-black text-white">
+    <footer id="contact" className="relative bg-black text-white">
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-5 py-12 md:grid-cols-3 md:px-8">
         <div className="space-y-3">
           <p className="text-lg font-black uppercase tracking-[0.2em]">Crash Ghost</p>
@@ -40,6 +42,13 @@ export function Footer() {
       <div className="border-t border-white/20 py-4 text-center text-xs text-zinc-400">
         © {new Date().getFullYear()} Crash Ghost. All rights reserved.
       </div>
+      <img
+        src={withBasePath("/stickers/group-96.png")}
+        alt="Footer sticker"
+        width={110}
+        height={110}
+        className="absolute bottom-3 right-3 h-[110px] w-[110px] -rotate-6 object-contain opacity-95"
+      />
     </footer>
   );
 }

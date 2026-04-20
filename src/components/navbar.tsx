@@ -11,22 +11,26 @@ export function Navbar() {
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="sticky top-0 z-50 border-b-2 border-black bg-white/95 backdrop-blur"
+      className="sticky top-0 z-50 border-b-4 border-black bg-white/95 shadow-[0_6px_0_0_#000] backdrop-blur"
     >
-      <div className="mx-auto flex h-24 w-full max-w-6xl items-center justify-between px-5 md:px-8">
-        <Link href="/" className="flex items-center gap-3 font-black uppercase tracking-[0.2em]">
+      <div className="mx-auto flex h-28 w-full max-w-6xl items-center justify-between px-5 md:px-8">
+        <Link href="/" className="flex items-center gap-4 font-black uppercase tracking-[0.2em]">
           <img
             src={withBasePath("/stickers/group-91.png")}
             alt="Ghost icon"
-            width={80}
-            height={80}
-            className="h-20 w-20 shrink-0 object-contain"
+            width={100}
+            height={100}
+            className="h-[100px] w-[100px] shrink-0 object-contain"
           />
-          <span className="text-base md:text-lg">Crash Ghost</span>
+          <span className="text-lg leading-none md:text-2xl">Crash Ghost</span>
         </Link>
-        <nav className="hidden items-center gap-6 text-sm font-semibold uppercase md:flex">
+        <nav className="hidden items-center gap-6 text-sm font-black uppercase md:flex">
           {navItems.map((item) => (
-            <a key={item.label} href={item.href} className="transition hover:-translate-y-0.5 hover:opacity-65">
+            <a
+              key={item.label}
+              href={item.href}
+              className="rounded-full border border-transparent px-3 py-1 transition hover:-translate-y-0.5 hover:border-black hover:bg-black hover:text-white"
+            >
               {item.label}
             </a>
           ))}
