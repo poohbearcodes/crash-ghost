@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { heroStickerAssets } from "@/lib/constants";
+import { withBasePath } from "@/lib/asset-path";
 
 export function Hero() {
   return (
@@ -59,7 +59,13 @@ export function Hero() {
                 top: `${Math.floor(idx / 2) * 28 + 8}%`,
               }}
             >
-              <Image src={asset} alt="Crash Ghost sticker placeholder" width={120} height={120} priority={idx < 2} />
+              <img
+                src={withBasePath(asset)}
+                alt="Crash Ghost sticker"
+                width={120}
+                height={120}
+                loading={idx < 2 ? "eager" : "lazy"}
+              />
             </motion.div>
           ))}
         </div>

@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { SectionTitle } from "@/components/section-title";
 import { stickerAssets } from "@/lib/constants";
+import { withBasePath } from "@/lib/asset-path";
 
 export function StickerWall() {
   return (
@@ -26,12 +26,13 @@ export function StickerWall() {
               className="rounded-2xl border-2 border-black bg-zinc-100 p-4 shadow-[5px_5px_0_0_#000]"
             >
               <div className="rounded-xl border border-black bg-white p-6">
-                <Image
-                  src={asset}
-                  alt="Sticker placeholder"
+                <img
+                  src={withBasePath(asset)}
+                  alt="Sticker"
                   width={220}
                   height={220}
                   className="mx-auto h-auto w-full max-w-[160px]"
+                  loading="lazy"
                 />
               </div>
             </motion.div>
