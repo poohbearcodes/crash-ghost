@@ -43,11 +43,11 @@ export function Footer() {
         © {new Date().getFullYear()} Crash Ghost. All rights reserved.
       </div>
       <img
-        src={withBasePath("/stickers/group-96.png")}
-        alt="Footer sticker"
-        width={110}
-        height={110}
-        className="absolute bottom-3 right-3 h-[110px] w-[110px] -rotate-6 object-contain opacity-95"
+        src={withBasePath("/stickers/8-ball.png")}
+        alt="8 ball sticker"
+        width={130}
+        height={130}
+        className="absolute bottom-3 right-3 h-[130px] w-[130px] -rotate-6 object-contain opacity-95"
       />
     </footer>
   );
