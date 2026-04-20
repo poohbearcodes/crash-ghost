@@ -8,7 +8,6 @@ const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
   basePath: isGithubActions ? `/${repoName}` : "",
-  assetPrefix: isGithubActions ? `/${repoName}/` : "",
   images: {
     unoptimized: true,
     formats: ["image/avif", "image/webp"],

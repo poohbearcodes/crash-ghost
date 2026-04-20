@@ -57,9 +57,9 @@ export const stickerAssets = [
   "/stickers/group-90.png",
   "/stickers/group-91.png",
   "/stickers/group-96.png",
-  "/stickers/union.png",
-  "/stickers/vector-1.png",
-  "/stickers/vector.png",
+  "/stickers/Union.png",
+  "/stickers/Vector-1.png",
+  "/stickers/Vector.png",
 ];
 
 export const heroStickerAssets = stickerAssets.slice(0, 8);
