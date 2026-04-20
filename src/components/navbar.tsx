@@ -11,7 +11,13 @@ export function Navbar() {
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="sticky top-0 z-50 border-b-4 border-black bg-white/95 shadow-[0_6px_0_0_#000] backdrop-blur"
+      className="sticky top-0 z-50 border-b-4 border-black shadow-[0_6px_0_0_#000]"
+      style={{
+        backgroundImage: `url(${withBasePath("/stickers/barbedbar.png")})`,
+        backgroundRepeat: "repeat-x",
+        backgroundSize: "auto 100%",
+        backgroundPosition: "center",
+      }}
     >
       <div className="mx-auto flex h-28 w-full max-w-6xl items-center justify-between px-5 md:px-8">
         <Link href="/" className="flex items-center gap-4 font-black uppercase tracking-[0.2em]">
