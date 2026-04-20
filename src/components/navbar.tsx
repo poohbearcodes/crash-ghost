@@ -13,14 +13,14 @@ export function Navbar() {
       transition={{ duration: 0.5 }}
       className="sticky top-0 z-50 border-b-2 border-black bg-white/95 backdrop-blur"
     >
-      <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5 md:px-8">
+      <div className="mx-auto flex h-24 w-full max-w-6xl items-center justify-between px-5 md:px-8">
         <Link href="/" className="flex items-center gap-3 font-black uppercase tracking-[0.2em]">
           <img
             src={withBasePath("/stickers/group-91.png")}
             alt="Ghost icon"
-            width={40}
-            height={40}
-            className="h-10 w-10 shrink-0 object-contain"
+            width={80}
+            height={80}
+            className="h-20 w-20 shrink-0 object-contain"
           />
           <span className="text-base md:text-lg">Crash Ghost</span>
         </Link>
