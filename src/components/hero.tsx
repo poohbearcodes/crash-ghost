@@ -25,13 +25,13 @@ export function Hero() {
           <div className="flex flex-wrap gap-4">
             <a
               href="#featured"
-              className="cursor-pointer rounded-full border-2 border-black bg-white px-6 py-3 text-sm font-bold uppercase text-black transition duration-200 hover:-translate-y-0.5 hover:bg-black hover:text-white"
+              className="cursor-pointer rounded-full border-2 border-black bg-white px-6 py-3 text-sm font-bold uppercase text-black visited:text-black transition duration-200 hover:-translate-y-0.5 hover:bg-black hover:text-white hover:visited:text-white"
             >
               Shop Drops
             </a>
             <a
               href="#about"
-              className="cursor-pointer rounded-full border-2 border-black bg-white px-6 py-3 text-sm font-bold uppercase text-black transition duration-200 hover:-translate-y-0.5 hover:bg-black hover:text-white"
+              className="cursor-pointer rounded-full border-2 border-black bg-white px-6 py-3 text-sm font-bold uppercase text-black visited:text-black transition duration-200 hover:-translate-y-0.5 hover:bg-black hover:text-white hover:visited:text-white"
             >
               Meet Crash Ghost
             </a>
