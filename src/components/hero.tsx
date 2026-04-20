@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { stickerAssets } from "@/lib/constants";
+import { heroStickerAssets } from "@/lib/constants";
 
 export function Hero() {
   return (
@@ -38,7 +38,7 @@ export function Hero() {
           </div>
         </div>
         <div className="relative min-h-[360px]">
-          {stickerAssets.map((asset, idx) => (
+          {heroStickerAssets.map((asset, idx) => (
             <motion.div
               key={asset}
               initial={{ opacity: 0, scale: 0.7, rotate: -15 }}
