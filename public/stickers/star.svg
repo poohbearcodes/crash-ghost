@@ -1,0 +1,5 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="30" fill="white"/>
+  <path d="M120 40L138 90L192 94L150 126L164 180L120 148L76 180L90 126L48 94L102 90L120 40Z" stroke="black" stroke-width="10" stroke-linejoin="round"/>
+  <text x="120" y="220" text-anchor="middle" fill="black" font-size="20" font-family="Arial Black">STAR</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="30" fill="white"/>
+  <path d="M40 130C40 85 78 50 120 50C162 50 200 85 200 130C200 168 172 198 120 208C68 198 40 168 40 130Z" stroke="black" stroke-width="10"/>
+  <circle cx="96" cy="122" r="8" fill="black"/>
+  <circle cx="145" cy="122" r="8" fill="black"/>
+  <path d="M95 152C107 164 134 164 146 152" stroke="black" stroke-width="8" stroke-linecap="round"/>
+  <path d="M82 95L95 74" stroke="black" stroke-width="7" stroke-linecap="round"/>
+  <path d="M151 95L168 74" stroke="black" stroke-width="7" stroke-linecap="round"/>
+  <text x="120" y="224" text-anchor="middle" fill="black" font-size="20" font-family="Arial Black">GHOST-02</text>
+</svg>
