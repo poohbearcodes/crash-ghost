@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { navItems } from "@/lib/constants";
+import { withBasePath } from "@/lib/asset-path";
 
 export function Navbar() {
   return (
@@ -13,8 +14,9 @@ export function Navbar() {
       className="sticky top-0 z-50 border-b-2 border-black bg-white/95 backdrop-blur"
     >
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-5 md:px-8">
-        <Link href="/" className="font-black uppercase tracking-[0.2em]">
-          Crash Ghost
+        <Link href="/" className="flex items-center gap-2 font-black uppercase tracking-[0.2em]">
+          <img src={withBasePath("/stickers/group-91.png")} alt="Ghost icon" width={26} height={26} />
+          <span>Crash Ghost</span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-semibold uppercase md:flex">
           {navItems.map((item) => (
