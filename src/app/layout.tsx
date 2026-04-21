@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const windsorProBold = localFont({
+  src: "./fonts/windsor-pro-bold.ttf",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Crash Ghost",
@@ -21,7 +26,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="shortcut icon" href={`${basePath}/favicon.png`} />
         <link rel="apple-touch-icon" href={`${basePath}/favicon.png`} />
       </head>
-      <body>{children}</body>
+      <body className={windsorProBold.className}>{children}</body>
     </html>
   );
 }

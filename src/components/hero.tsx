@@ -12,7 +12,7 @@ export function Hero() {
           <p className="inline-flex w-fit rounded-full border border-black px-4 py-1 text-xs font-bold uppercase tracking-[0.2em]">
             Sticker Chaos Society
           </p>
-          <h1 className="text-5xl font-black uppercase leading-[0.95] md:text-7xl">
+          <h1 className="hero-title-font text-5xl font-black uppercase leading-[0.95] md:text-7xl">
             Wear The
             <span className="inline-block -rotate-2 border-2 border-black bg-black px-3 text-white">Ghost</span>
             <br />
@@ -37,7 +37,7 @@ export function Hero() {
             </a>
           </div>
         </div>
-        <div className="relative min-h-[360px]">
+        <div className="relative min-h-[420px]">
           {heroStickerAssets.map((asset, idx) => (
             <motion.div
               key={asset}
@@ -46,24 +46,25 @@ export function Hero() {
                 opacity: 1,
                 scale: 1,
                 rotate: idx % 2 === 0 ? 8 : -8,
-                y: [0, idx % 2 === 0 ? -12 : 12, 0],
+                y: [0, idx % 2 === 0 ? -16 : 16, 0],
               }}
               transition={{
                 delay: idx * 0.08,
                 duration: 0.9,
-                y: { repeat: Number.POSITIVE_INFINITY, duration: 4 + idx, ease: "easeInOut" },
+                y: { repeat: Number.POSITIVE_INFINITY, duration: 3.2 + idx * 0.35, ease: "easeInOut" },
               }}
               className="absolute rounded-2xl border-2 border-black bg-white p-2 shadow-[6px_6px_0_0_#000]"
               style={{
-                left: `${(idx % 3) * 28 + (idx === 5 ? 12 : 4)}%`,
-                top: `${Math.floor(idx / 2) * 28 + 8}%`,
+                left: `${(idx % 4) * 21 + 2}%`,
+                top: `${Math.floor(idx / 4) * 30 + 6}%`,
+                zIndex: (idx % 5) + 1,
               }}
             >
               <img
                 src={withBasePath(asset)}
                 alt="Crash Ghost sticker"
-                width={120}
-                height={120}
+                width={104}
+                height={104}
                 loading={idx < 2 ? "eager" : "lazy"}
               />
             </motion.div>

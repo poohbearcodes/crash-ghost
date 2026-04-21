@@ -62,4 +62,21 @@ export const stickerAssets = [
   "/stickers/Vector.png",
 ];
 
-export const heroStickerAssets = stickerAssets.slice(0, 8);
+export const heroStickerAssets = [
+  "/stickers/group-89.png",
+  "/stickers/group-76.png",
+  "/stickers/group-78.png",
+  "/stickers/group-96.png",
+  "/stickers/Union.png",
+  "/stickers/group-29.png",
+  "/stickers/group-37.png",
+  "/stickers/group-43.png",
+  "/stickers/group-51.png",
+  "/stickers/group-62.png",
+  "/stickers/group-63.png",
+  "/stickers/group-65.png",
+  "/stickers/group-71.png",
+  "/stickers/group-81.png",
+  "/stickers/group-82.png",
+  "/stickers/group-86.png",
+];

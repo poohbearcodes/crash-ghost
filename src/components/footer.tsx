@@ -5,7 +5,15 @@ export function Footer() {
     <footer id="contact" className="relative bg-black text-white">
       <div className="mx-auto grid w-full max-w-6xl gap-8 px-5 py-12 md:grid-cols-3 md:px-8">
         <div className="space-y-3">
-          <p className="text-lg font-black uppercase tracking-[0.2em]">Crash Ghost</p>
+          <div className="flex items-center">
+            <img
+              src={withBasePath("/stickers/group-91.png")}
+              alt="Crash Ghost footer mark"
+              width={156}
+              height={66}
+              className="-mt-2 h-auto w-[156px] object-contain"
+            />
+          </div>
           <p className="text-sm text-zinc-300">Streetwear and sticker chaos for the internet underground.</p>
         </div>
         <div className="space-y-2 text-sm">
@@ -42,13 +50,6 @@ export function Footer() {
       <div className="border-t border-white/20 py-4 text-center text-xs text-zinc-400">
         © {new Date().getFullYear()} Crash Ghost. All rights reserved.
       </div>
-      <img
-        src={withBasePath("/stickers/8-ball.png")}
-        alt="8 ball sticker"
-        width={130}
-        height={130}
-        className="absolute bottom-3 right-3 h-[130px] w-[130px] -rotate-6 object-contain opacity-95"
-      />
     </footer>
   );
 }
